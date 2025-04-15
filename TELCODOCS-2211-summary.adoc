@@ -1,0 +1,50 @@
+= TELCODOCS-2211: Docs and RN: 3 Card WPC T-GM
+
+== Summary
+This document outlines the updates required for configuring linuxptp services as a grandmaster clock (T-GM) for 3 Card WPC. The current documentation only addresses dual card configurations, and this update aims to make the section more generic by including examples for both 2 NIC and 3 NIC setups.
+
+== Key Updates
+
+1. **Rewording**:
+   - Update the section to state: "You can configure the `linuxptp` services as a T-GM for the following cards."
+
+2. **Table Update**:
+   - Remove class 140 from the table in the [PTP Grandmaster Clock Class Reference](https://docs.openshift.com/container-platform/4.17/networking/ptp/configuring-ptp.html#nw-ptp-grandmaster-clock-class-reference_configuring-ptp).
+
+3. **Example Configuration**:
+   - Provide an example PTP configuration. Drafts are available in [CNF-16811](https://issues.redhat.com/browse/CNF-16811).
+
+4. **Diagram**:
+   - Include a diagram to illustrate multiple connection options.
+
+== Additional Information
+
+- **SME**: Vitaly Grinberg
+- **Epic Assignee**: Francesco Romani
+- **QE**: Mallapadi Niranjan
+
+== Resources
+
+- [Configuring linuxptp services as a grandmaster clock for dual E810 NICs](https://docs.redhat.com/en/documentation/openshift_container_platform/4.12/html/networking/using-ptp#configuring-linuxptp-services-as-grandmaster-clock_using-ptp)
+- [CNF-16811](https://issues.redhat.com/browse/CNF-16811)
+
+== Release Notes
+
+- This update will be included in the release notes for affected versions.
+
+== Day 0: Intro, Planning, Pre-requisites
+
+- About the feature: Configuring linuxptp services as a T-GM for 3 Card WPC.
+- Why do we need it? To support additional configurations and use cases.
+- Conceptual example of architecture and configuration.
+
+== Day 1: Install, Configure, Acceptance Test
+
+- Installing: Ensure the operator is installed correctly.
+- Configuring: Add the required data and options to the configuration files.
+- Example configuration provided.
+
+== Day 2: Administer, Maintain, Upgrade/update
+
+- Administration tasks and troubleshooting steps.
+- Upgrade steps for future versions.
