@@ -8,6 +8,8 @@
 
 Use this information to understand how to configure 3 E810 NICs as PTP grandmaster clock (T-GM).
 
+Test
+
 Before you configure the 3-card cluster host, you must connect the 3 NICs by using the 1PPS faceplate connections.
 The primary NIC `1PPS_out` outputs feed the other 2 NICs.
 
