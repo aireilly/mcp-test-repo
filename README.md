@@ -1,3 +1,3 @@
 # mcp-test-repo
 
-This is a test commit via MCP.
+This is a test commit via MCP. test.
